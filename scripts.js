@@ -29,7 +29,6 @@ $(document).ready(function(){
   "Everyone who's ever had a shower has had a good idea. It's the people who dry off and do something about it that make a difference. Nolan Bushnell",
   "I survived because the fire inside me burned brighter than the fire around me. - Joshua Graham",
   "One of the most profound concepts in psychology is that when you do something, your emotions follow along behind. If you wait around to feel good or non-anxious, you'll be waiting forever. You need to start DOING, and then you will BECOME. - Sean Cooper",
-  "",
   "Deep down, everyone is just faking it until they figure it out. And you will too, because you are awesome and everyone else sucks. - April Ludgate",
   "Who is happier man, he who has braved the storm of life and lived or he who has stayed securely on shore and merely existed? - Hunter S. Thompson",
   "Satisfaction lies in the effort, not in the attainment, full effort is full victory. - Mahatma Gandhi",
