@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  // LIST OF QUOTES TO CYCLE THROUGH - ADD, DELETE, AND UPDATE PERIODICALLY
   var quotes = ["There's no risk when you go after a dream. Theres a tremendous risk when you play it safe. - Bill Burr",
   "At the end of the day I say to myself, 'Did I make a difference?' I hope the answer is always yes. - Lenny Robinson",
   "Your future self is watching you right now through memories. - Anonymous",
@@ -34,29 +35,35 @@ $(document).ready(function(){
   "Satisfaction lies in the effort, not in the attainment, full effort is full victory. - Mahatma Gandhi",
   "It was in the middle of winter that I finally discovered that there was within me an invincible summer. - Albert Camus"];
 
-  // var backgroundColors = ['#F26D5B', '#C03546', '#3B8686', '#47B8E0', '#DF405A'];
-  var backgroundColors = ['#ff7043', '#ffa726', '#ffca28', '#d4e157', '#9ccc65', '#66bb6a', '#26a69a', '#26c6da', '#29b6f6', '#42a5f5', '#5c6bc0', '#7e57c2', '#ab47bc', '#ec407a', '#ef5350'];
-  
-  var videos = ['https://www.youtube.com/watch?v=7dqzLxhwgas', 'https://www.youtube.com/watch?v=gXuSMjrx_e8'];
+  // VARIOUS BACKGROUND COLORS THAT CHANGE AS NEW USER CYCLES THROUGH QUOTES
+  var backgroundColors = ['#ff7043', '#ffa726', '#9ccc65', '#66bb6a', '#26a69a', '#26c6da', '#039be5', '#42a5f5', '#5c6bc0', '#7e57c2', '#673ab7', '#ab47bc', '#ec407a', '#ef5350'];
 
+  // SELECT RANDOM INDEX OF QUOTE FROM QUOTES ARRAY
   var rand = quotes[Math.floor( Math.random() * quotes.length )];
   var index;
+
+  // SELECT RANDOM QUOTE TO DISPLAY ON INITIAL PAGE LOAD
   $('blockquote').text(rand);  
+
+  // BUTTON THAT CYCLES THROUGH QUOTES AND BACKGROUND COLORS
   $('.quote').click(function(){
     index = backgroundColors[Math.floor(Math.random() * backgroundColors.length)];
     $('body').css('background-color', index);
     $('#tagline').css('display', 'none');
     $('blockquote').text(quotes[Math.floor( Math.random() * quotes.length )]);
   });
+  // POTENTIAL TWITTER INTEGRATION - NEEDS MORE TESTING
   // $('.tweet').click(function(){
   //   $('.tweet a').attr('href','https://twitter.com/intent/tweet?text='+encodeURIComponent(rand) + "quote from: shootforthetop.com");
   // });
 
-   $('.modal-trigger').leanModal();
-   $('#videoStart').on('click', function(ev) {
+  // OPENS VIDEO MODAL
+  $('.modal-trigger').leanModal();
+
+  // AUTOPLAY VIDEO ON VIDEO MODAL-TRIGGER CLICK
+  $('#videoStart').on('click', function(ev) {
     $("#votm")[0].src += "?autoplay=1";
     ev.preventDefault();
- 
   });
 
 });

@@ -88,6 +88,7 @@ MADE BY LUIS ROCHA @ LUISROCHADEV.COM            -->
 
   <!-- FAB BUTTON FOR MOBILE -->
 
+
   <div class="fixed-action-btn horizontal click-to-toggle hide-on-large-only" style="bottom: 45px; right: 55px; height: 2em; width: 2em;" >
     <a class="btn-floating btn-large red quote" style="">
       <i class="fa fa-refresh"></i>
@@ -97,8 +98,18 @@ MADE BY LUIS ROCHA @ LUISROCHADEV.COM            -->
 
 
 
+
+
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
   <script type="text/javascript" src="scripts.js"></script>
+  <script type="text/javascript">
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    var $toastContent = $("<span>Please rotate your device sideways!</span>");
+    Materialize.toast($toastContent, 4000);// Mobile pop-up for usability
+  }
+  </script>
+
+
 </body>
 </html>
