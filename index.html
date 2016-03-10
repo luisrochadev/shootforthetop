@@ -104,10 +104,8 @@ MADE BY LUIS ROCHA @ LUISROCHADEV.COM            -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
   <script type="text/javascript" src="scripts.js"></script>
   <script type="text/javascript">
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-    var $toastContent = $("<span>Please rotate your device sideways!</span>");
-    Materialize.toast($toastContent, 4000);// Mobile pop-up for usability
-  }
+
+    Materialize.toast('Please rotate your device sideways!', 4000, 'hide-on-large-only') ;// Mobile pop-up for usability
   </script>
 
 
