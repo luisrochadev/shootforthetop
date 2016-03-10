@@ -1,0 +1,30 @@
+body {
+  background-color: #78909c;
+  color: #fff;
+  /*background-image: url('http://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-118264.png');*/
+}
+
+h1 {
+  margin-top: 20%;
+}
+
+.vertical{
+  position: absolute;
+  top: 50%;
+}
+
+
+
+
+
+blockquote {
+  font-size: 20px;
+  font-style: italic;
+
+}
+
+.fa-twitter {
+  color: white;
+}
+
+
